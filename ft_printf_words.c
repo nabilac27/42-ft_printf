@@ -6,7 +6,7 @@
 /*   By: nchairun <nchairun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 00:12:59 by nchairun          #+#    #+#             */
-/*   Updated: 2024/11/10 19:51:39 by nchairun         ###   ########.fr       */
+/*   Updated: 2024/11/10 19:54:56 by nchairun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,11 @@ int	ft_printf_s(char *s)
 	int	i;
 
 	i = 0;
-	if (s == 0)
-		return (-1));
+	if (!s)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
 	while (s[i] != '\0')
 	{
 		write(1, &s[i], 1);
