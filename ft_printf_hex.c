@@ -6,7 +6,7 @@
 /*   By: nchairun <nchairun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 00:16:11 by nchairun          #+#    #+#             */
-/*   Updated: 2024/11/13 22:49:44 by nchairun         ###   ########.fr       */
+/*   Updated: 2024/11/13 21:05:30 by nchairun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,18 @@ int	ft_printf_p(void *ptr)
 
 int	ft_printf_hex(unsigned long n)
 {
-	int		length;
+	int		i;
 	char	*hex_digit;
 
 	hex_digit = "0123456789abcdef";
 	if (n < 16)
-		return (write(1, &(hex_digit[n]), 1));
+		return (ft_printf_c(hex_digit[n]));
 	else
 	{
-		length = ft_printf_hex(n / 16);
-		if (length == -1)
+		i = ft_printf_hex(n / 16);
+		if (i == -1)
 			return (-1);
-		return (length + ft_printf_hex(n % 16));
+		return (i + ft_printf_hex(n % 16));
 	}
 }
 
@@ -72,7 +72,7 @@ int	ft_printf_hex_upper(unsigned long n)
 
 	hex_digit_upper = "0123456789ABCDEF";
 	if (n < 16)
-		return (write(1, &hex_digit_upper[n], 1));
+		return (ft_printf_c(hex_digit_upper[n]));
 	else
 	{
 		i = ft_printf_hex_upper(n / 16);
