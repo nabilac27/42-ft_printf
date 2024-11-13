@@ -23,13 +23,13 @@ int	ft_printf_d(int n)
 			return (-1);
 		return (11);
 	}
-	if (n < 0)
+	else if (n < 0)
 	{
 		if (ft_printf_c('-') == -1)
 			return (-1);
 		return (ft_printf_d(-1 * n) + 1);
 	}
-	if (n < 10)
+	else if (n < 10)
 	{
 		if (ft_printf_c(n + '0') == -1)
 			return (-1);
