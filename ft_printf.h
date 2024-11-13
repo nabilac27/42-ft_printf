@@ -6,7 +6,7 @@
 /*   By: nchairun <nchairun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 19:38:38 by nchairun          #+#    #+#             */
-/*   Updated: 2024/11/10 18:48:05 by nchairun         ###   ########.fr       */
+/*   Updated: 2024/11/13 20:39:57 by nchairun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,13 @@ int	ft_printf_format(char specifier, va_list arg_ptr);
 int	ft_printf_c(int c);
 int	ft_printf_s(char *s);
 
-int	ft_printf_p(uintptr_t n);
-int	ft_printf_hex(uintptr_t n);
+int	ft_printf_p(void *data);
+int	ft_printf_hex(unsigned long n);
 
 int	ft_printf_d(int n);
 int	ft_printf_x(unsigned int n, char specifier);
 
-int	ft_printf_hex_upper(uintptr_t n);
+int	ft_printf_hex_upper(unsigned long n);
 int	ft_printf_u(unsigned int n);
 
 #endif
