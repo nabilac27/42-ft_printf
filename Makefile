@@ -6,15 +6,13 @@
 #    By: nchairun <nchairun@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 23:49:33 by nchairun          #+#    #+#              #
-#    Updated: 2024/11/10 18:33:17 by nchairun         ###   ########.fr        #
+#    Updated: 2024/11/14 01:06:57 by nchairun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-CC = cc
-
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = cc -Wall -Wextra -Werror
 
 AR = ar rcs
 
@@ -32,7 +30,7 @@ $(NAME): $(OBJS)
 		$(AR) $(NAME) $^
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CFLAGS) -c $< -o $@
 
 clean:
 		rm -f $(OBJS)

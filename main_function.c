@@ -6,49 +6,67 @@
 /*   By: nchairun <nchairun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 01:11:06 by nchairun          #+#    #+#             */
-/*   Updated: 2024/11/13 21:10:13 by nchairun         ###   ########.fr       */
+/*   Updated: 2024/11/15 21:28:53 by nchairun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "ft_printf.h"
+#include "ft_printf.h"
 
-// int	main(void)
-// {
-// 	// int	count;
-// 	// int	ft_count;
-// 	// ft_count = ft_printf("%p", "");
-// 	// printf("\nft_printf---> %d\n", ft_count);
-// 	// printf("-----------		-----------\n");
-// 	// count = printf("%p", "");
-// 	// printf("\nprintf---> %d\n", count);
+int	main(void)
+{
+	// String, char, integer
+	printf("printf: \n");
+	printf("%d,%d,%d Hello %s%c", 1,2,3, "World", '!'); // Input
+	printf("\n\n");
 
-// 	// printf("Hello %s", "World");
-// 	// printf("\n--------------\n");
+	ft_printf("ft_printf\n");
+	ft_printf("%d,%d,%d Hello %s%c", 1,2,3, "World", '!'); // Input
+	ft_printf("\n\n--------- \n");
 
-// 	ft_printf("%c", 'W');
-// 	ft_printf("\n");
-// 	// close(1);
+	// Pointer address in Hexadecimal
+	int test_ptr = 2024;
+	printf("printf: \n");
+	printf("The address of this variable: %p", &test_ptr); // Input
+	printf("\n\n");
 
-//     // int result = ft_printf_c(NULL);
-//     // printf("Result: %d\n", result);
-	// This will not print since stdout is closed.
+	ft_printf("ft_printf\n");
+	ft_printf("The address of this variable: %p", &test_ptr); // Input
+	ft_printf("\n\n--------- \n");
 
-// 	// printf("Hello %s", "World");
-// 	// printf("\n--------------\n");
+	// Hexadecimal
+	int test_hex = 2024;
+	printf("printf: \n");
+	printf("The hexadecimal of given number: %X", test_hex); // Input
+	printf("\n\n");
 
-// 	// ft_printf("Hello %s", "World");
-// 	// ft_printf("\n--------------\n");
+	ft_printf("ft_printf\n");
+	ft_printf("The hexadecimal of given number: %X", test_hex); // Input
+	ft_printf("\n");
 
-// 	// printf("%s", NULL);
-// 	// printf("\n--------------\n");
+	// Unsigned int
+	int test_u = -123;
+	printf("printf: \n");
+	printf("The unsgined int of given number: %u", test_u); // Input
+	printf("\n\n");
 
-// 	// ft_printf("%s", NULL);
-// 	// ft_printf("\n--------------\n");
+	ft_printf("ft_printf\n");
+	ft_printf("The unsigned int of given number: %u", test_u); // Input
+	ft_printf("\n");
 
-// 	return (0);
-// }
+	// Other test
+	printf("printf: \n");
+	printf("   "); // Input
+	printf("\n\n");
 
-// /*
-// 	cc ft_printf.c ft_printf_digits.c ft_printf_hex.c 
-// ft_printf_words.c main_function.c
-// */
+	ft_printf("ft_printf\n");
+	ft_printf(   ""); // Input
+	ft_printf("\n\n--------- \n");
+
+	return (0);
+}
+
+/*
+	cc ft_printf.c ft_printf_digits.c ft_printf_hex.c ft_printf_words.c
+	main_function.c
+*/
+
