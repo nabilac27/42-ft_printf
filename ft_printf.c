@@ -6,7 +6,7 @@
 /*   By: nchairun <nchairun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 22:45:32 by nchairun          #+#    #+#             */
-/*   Updated: 2024/11/13 21:06:04 by nchairun         ###   ########.fr       */
+/*   Updated: 2024/11/22 01:31:23 by nchairun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,24 +43,18 @@ int	ft_printf(const char *str, ...)
 
 int	ft_printf_format(char specifier, va_list arg_ptr)
 {
-	int	length;
-
-	length = 0;
 	if (specifier == 'c')
-		length = ft_printf_c(va_arg(arg_ptr, int));
+		return (ft_printf_c(va_arg(arg_ptr, int)));
 	else if (specifier == 's')
-		length = ft_printf_s(va_arg(arg_ptr, char *));
+		return (ft_printf_s(va_arg(arg_ptr, char *)));
 	else if (specifier == 'p')
-		length = ft_printf_p(va_arg(arg_ptr, void *));
+		return (ft_printf_p(va_arg(arg_ptr, void *)));
 	else if (specifier == 'd' || specifier == 'i')
-		length = ft_printf_d(va_arg(arg_ptr, int));
+		return (ft_printf_d(va_arg(arg_ptr, int)));
 	else if (specifier == 'x' || specifier == 'X')
-		length = ft_printf_x(va_arg(arg_ptr, unsigned int), specifier);
+		return (ft_printf_x(va_arg(arg_ptr, unsigned int), specifier));
 	else if (specifier == 'u')
-		length = ft_printf_u(va_arg(arg_ptr, unsigned int));
-	else if (specifier == '%')
-		length = ft_printf_c('%');
-	if (length == -1)
-		return (-1);
-	return (length);
+		return (ft_printf_u(va_arg(arg_ptr, unsigned int)));
+	else
+		return (ft_printf_c('%'));
 }
