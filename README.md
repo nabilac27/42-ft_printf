@@ -1,5 +1,5 @@
-42 Projects: ft_printf
 This repository contains my implementation of the ft_printf function, a fundamental part of the 42 School curriculum.
+
 The goal is to recreate the standard C printf function with specified features and constraints while deepening 
 understanding of variadic functions, memory management, and formatted output.
 
@@ -15,6 +15,6 @@ va_start: Initializes a va_list for use.
 va_arg: Retrieves the next argument in the list.
 va_end: Cleans up the va_list when done.
 
-Return Type:
+Return Type
 Returns the total length of characters printed.
 If an error occurs, ft_printf returns -1.
