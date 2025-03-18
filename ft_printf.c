@@ -14,7 +14,7 @@
 
 int	ft_printf(const char *str, ...)
 {
-	va_list	arg_ptr;
+	va_list		arg_ptr;
 	int		i;
 	int		length;
 	int		result;
