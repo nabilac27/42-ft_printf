@@ -1,10 +1,18 @@
 ### **ft_printf** - Custom Implementation
 
-This repository contains my implementation of the **ft_printf** function, a core project in the **42 School** curriculum. The goal of this project is to recreate the standard C `printf` function while meeting specific requirements and constraints, deepening the understanding of **variadic functions**, **formatted output**, and **memory management**.
+This repository contains my implementation of the **ft_printf** function, 
+a core project in the **42 School** curriculum. 
+
+The goal of this project is to recreate the standard C `printf` function 
+while meeting specific requirements and constraints, 
+deepening the understanding of **variadic functions**, **formatted output**, 
+and **memory management**.
 
 #### **About ft_printf**
 
-`ft_printf` is a variadic function, meaning it accepts a variable number of arguments. The first argument is a format string that defines how the subsequent arguments are formatted and displayed. The function processes the format string, parsing specifiers like `%d`, `%s`, `%c`, etc., and outputs the corresponding formatted values.
+`ft_printf` is a variadic function, meaning it accepts a variable number of arguments. 
+The first argument is a format string that defines how the subsequent arguments are formatted and displayed. 
+The function processes the format string, parsing specifiers like `%d`, `%s`, `%c`, etc., and outputs the corresponding formatted values.
 
 #### **Key Concepts**
 
@@ -49,7 +57,3 @@ This repository contains my implementation of the **ft_printf** function, a core
 | `ft_printf_x(unsigned int n, char specifier)` | Handles the `%x` and `%X` format specifiers to print a hexadecimal value (lowercase/uppercase). |
 | `ft_printf_hex(unsigned long n)` | Prints a hexadecimal value (lowercase) of the given unsigned long integer. |
 | `ft_printf_hex_upper(unsigned long n)` | Prints a hexadecimal value (uppercase) of the given unsigned long integer. |
-
----
-
-This table organizes your `ft_printf` function into its respective components, giving a clear description of each function's role. Let me know if you need any further modifications!
