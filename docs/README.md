@@ -29,7 +29,7 @@ The function processes the format string, parsing specifiers like `%d`, `%s`, `%
 
 ---
 
-### **Function Overview**
+#### **Function Overview**
 
 | **Function** | **Description** |
 |--------------|-----------------|
