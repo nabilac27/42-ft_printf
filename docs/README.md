@@ -1,4 +1,4 @@
-### **ft_printf**
+## **ft_printf**
 
 This repository contains my implementation of the **ft_printf** function, 
 a core project in the **42 School** curriculum. 
