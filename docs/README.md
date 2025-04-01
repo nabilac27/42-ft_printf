@@ -1,4 +1,4 @@
-## **ft_printf**
+# **ft_printf**
 
 This repository contains my implementation of the **ft_printf** function, 
 a core project in the **42 School** curriculum. 
@@ -8,13 +8,13 @@ while meeting specific requirements and constraints,
 deepening the understanding of **variadic functions**, **formatted output**, 
 and **memory management**.
 
-### **About ft_printf**
+## **About ft_printf**
 
 `ft_printf` is a variadic function, meaning it accepts a variable number of arguments. 
 The first argument is a format string that defines how the subsequent arguments are formatted and displayed. 
 The function processes the format string, parsing specifiers like `%d`, `%s`, `%c`, etc., and outputs the corresponding formatted values.
 
-### **Key Concepts**
+## **Key Concepts**
 
 - **Variadic Functions**: 
   - The `<stdarg.h>` library is used to handle variadic functions, enabling the processing of a variable number of arguments.
@@ -29,7 +29,7 @@ The function processes the format string, parsing specifiers like `%d`, `%s`, `%
 
 ---
 
-### **Functions Overview**
+## **Functions Overview**
 
 | **Function** | **Description** |
 |--------------|-----------------|
