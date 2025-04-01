@@ -24,7 +24,8 @@ The function processes the format string, parsing specifiers like `%d`, `%s`, `%
     - `va_end`: Cleans up the `va_list` after processing.
 
 - **Return Type**: 
-  - The function returns the total number of characters printed. If an error occurs, `ft_printf` returns `-1`.
+  - The function returns the total number of characters printed.
+  - If an error occurs, `ft_printf` returns `-1`.
 
 ---
 
