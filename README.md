@@ -35,25 +35,10 @@ The function processes the format string, parsing specifiers like `%d`, `%s`, `%
 |--------------|-----------------|
 | `ft_printf(const char *str, ...)` | The main function that processes the format string and handles the variadic arguments. It returns the total number of characters printed. |
 | `ft_printf_format(char specifier, va_list arg_ptr)` | A helper function that processes individual format specifiers (e.g., `%c`, `%d`, `%s`). |
-
-#### **File: ft_printf_words.c**
-
-| **Function** | **Description** |
-|--------------|-----------------|
 | `ft_printf_c(int c)` | Handles the `%c` format specifier and prints a character. |
 | `ft_printf_s(char *s)` | Handles the `%s` format specifier and prints a string. |
-
-#### **File: ft_printf__digits.c**
-
-| **Function** | **Description** |
-|--------------|-----------------|
 | `ft_printf_d(int n)` | Handles the `%d` format specifier and prints a signed integer. |
 | `ft_printf_u(unsigned int n)` | Handles the `%u` format specifier and prints an unsigned integer. |
-
-#### **File: ft_printf_hex.c**
-
-| **Function** | **Description** |
-|--------------|-----------------|
 | `ft_printf_p(void *ptr)` | Handles the `%p` format specifier and prints a pointer address. |
 | `ft_printf_x(unsigned int n, char specifier)` | Handles the `%x` and `%X` format specifiers to print a hexadecimal value (lowercase/uppercase). |
 | `ft_printf_hex(unsigned long n)` | Prints a hexadecimal value (lowercase) of the given unsigned long integer. |
