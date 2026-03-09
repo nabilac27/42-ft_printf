@@ -43,3 +43,84 @@ The function processes the format string, parsing specifiers like `%d`, `%s`, `%
 | `ft_printf_x(unsigned int n, char specifier)` | Handles the `%x` and `%X` format specifiers to print a hexadecimal value (lowercase/uppercase). |
 | `ft_printf_hex(unsigned long n)` | Prints a hexadecimal value (lowercase) of the given unsigned long integer. |
 | `ft_printf_hex_upper(unsigned long n)` | Prints a hexadecimal value (uppercase) of the given unsigned long integer. |
+
+## How to Run
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/ft_printf.git
+cd ft_printf
+```
+
+2. **Compile the library**
+
+```bash
+make
+```
+
+This will generate the static library:
+
+```
+libftprintf.a
+```
+
+---
+
+## How to Use
+
+Include the header in your C file:
+
+```c
+#include "ft_printf.h"
+```
+
+Compile your program with the library:
+
+```bash
+cc main.c libftprintf.a
+```
+
+Then run:
+
+```bash
+./a.out
+```
+
+## Example
+
+Example program using `ft_printf`:
+
+```c
+#include "ft_printf.h"
+
+int main(void)
+{
+    int len;
+
+    len = ft_printf("Hello %s!\n", "World");
+    ft_printf("Printed %d characters\n", len);
+
+    ft_printf("Character: %c\n", 'A');
+    ft_printf("Decimal: %d\n", 42);
+    ft_printf("Unsigned: %u\n", 42);
+    ft_printf("Hex lowercase: %x\n", 255);
+    ft_printf("Hex uppercase: %X\n", 255);
+    ft_printf("Pointer: %p\n", &len);
+
+    return (0);
+}
+```
+
+### Output
+
+```
+Hello World!
+Printed 13 characters
+Character: A
+Decimal: 42
+Unsigned: 42
+Hex lowercase: ff
+Hex uppercase: FF
+Pointer: 0x7ffee3b6c9ac
+```
