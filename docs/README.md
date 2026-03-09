@@ -32,12 +32,19 @@ and **memory management**.
 ## Folder Structure
 ```bash
 ft_printf/
+|
 ├── Makefile
+|
 ├── ft_printf.h
+|
 ├── ft_printf.c
+|
 ├── ft_printf_digits.c
+|
 ├── ft_printf_hex.c
+|
 ├── ft_printf_words.c
+|
 └── main.c
 ```
 
