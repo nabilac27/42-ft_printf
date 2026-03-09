@@ -78,7 +78,7 @@ Include the header in your C file:
 Compile your program with the library:
 
 ```bash
-cc [program name].c libftprintf.a
+cc main.c libftprintf.a
 ```
 
 Then run:
