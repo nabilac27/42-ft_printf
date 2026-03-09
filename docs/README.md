@@ -10,9 +10,9 @@ and **memory management**.
 
 ## **About ft_printf**
 
-`ft_printf` is a variadic function, meaning it accepts a variable number of arguments. 
-The first argument is a format string that defines how the subsequent arguments are formatted and displayed. 
-The function processes the format string, parsing specifiers like `%d`, `%s`, `%c`, etc., and outputs the corresponding formatted values.
+- `ft_printf` is a variadic function, meaning it accepts a variable number of arguments. 
+- The first argument is a format string that defines how the subsequent arguments are formatted and displayed. 
+- The function processes the format string, parsing specifiers like `%d`, `%s`, `%c`, etc., and outputs the corresponding formatted values.
 
 ## **Key Concepts**
 
